@@ -20,9 +20,12 @@ body {
  * Barre de navigation
  */
 nav {
-    background-color: black; /* Couleur de fond */
+    background-color: rgba(0, 0, 0, 0.85); /* Couleur de fond */
     text-transform: uppercase; /* Met le texte en majuscule */
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
 }
 
@@ -99,4 +102,39 @@ header h2 {
     background-color: #ff2400;
     /* Permet d'ajouter une transition entre les changements de valeurs */
     transition: all 500ms;
+}
+
+/**
+ * MAIN
+ */
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    margin: 150px 0;    
+}
+
+main section img {
+    width: 300px; /* Largeur */
+    height: 300px; /* Hauteur */
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+main section h3 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: lighter;
+}
+
+/**
+ * FOOTER
+ */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    border-top: 1px solid gray;
 }
