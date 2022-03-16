@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin: 0; /* Marges extérieur */
+}
+
+.container {
+    width: 60%; /* Pour centrer de la page et occoupe le pourcentage de l'écran au millieu*/
+    /**
+     * Appliques des marges éxterieurs sur l'espace
+     * disponible seulement si une largeur fixe à été précisée
+    */
+    margin: auto; 
+}
+
+
+/**
+ * Barre de navigation
+ */
+nav {
+    background-color: black; /* Couleur de fond */
+    text-transform: uppercase; /* Met le texte en majuscule */
+
+
+}
+
+
+nav .container {
+    display: flex; /* Permet de disposer les élements les uns à coté des autres */
+    justify-content: space-between; /* Sépare les élements en utilisant l'espace disponible */
+    align-items: center; /* Centre verticalement */     
+
+}
+
+
+/**
+ /* Toujours préciser la balise "a" pour effectuer des changement */
+ /* L'espace représent "a l'interieur de..." */
+
+nav a {
+    color: white; /* Couleur de la police de caractères */
+    text-decoration: none; /* Enleve le soulignement du lien */
+    font-weight: bold; /* Mettre le texte en gras */
+
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none; /* Retir les élements décoratifs commes les points */
+    gap: 20px; /* L'écart entre les élements */
+
+}
+
+/**
+ * Header
+ */
+header {
+    background: linear-gradient(to right, #e71969, #f56306);
+    color: white;
+    text-align: center; /* Alignement horizontal du texte 
+    padding-top: 215px; Marges intérieurs
+    padding-bottom: 215px; */
+    /* padding: 215px 0 215px 0; /* Dans l'ordre: haut, droite, bas, gauche */
+    padding: 215px 0; /* Dans l'ordre: haut/bas et droite/gauche */
+    /* padding: 215px; */ /* Les 4 côtés prennent une valeur */
+
+}
+
+header h1 {
+    /* https://www.codeur.com/tuto/css/unite-de-mesure-taille-px-em-rem/#le_em */
+    font-size: 6rem;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 4rem;
+    margin: 10px 0 80px 0; /* 10px haut, 0 droite, 80px bas, 0 gauche */
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #991e5f;
+    padding: 30px 45px; /*  30px haut/bas et 45px droite/gauche */
+    border-radius: 100px; /* Arrondis les bords */
+    letter-spacing: 0.2rem; /* Espacement entre les lettres */   
+    transition: all 500ms; 
+}
+
+/**
+ * :hover s'enclenche dès que lq souris survole l'élément
+ * ATTENTION ! Pas d'espace avant et après les ":"
+ */
+.btn:hover {
+    background-color: #ff2400;
+    /* Permet d'ajouter une transition entre les changements de valeurs */
+    transition: all 500ms;
+}
